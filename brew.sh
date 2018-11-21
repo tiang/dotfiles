@@ -95,5 +95,8 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+#install theFuck
+brew install thefuck
+
 # Remove outdated versions from the cellar.
 brew cleanup
