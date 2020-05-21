@@ -86,7 +86,7 @@ jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources
 unset jscbin;
 
 # Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+# alias c="tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
@@ -153,6 +153,6 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 # Git alias
-alias p = !git push origin $(git rev-parse --abbrev-ref HEAD)
-alias amend = !git add -A && git commit --amend --no-edit
-alias c = "!git add -A && git commit -m "
+alias gpo="git push origin $(git rev-parse --abbrev-ref HEAD)"
+alias amend="!git add -A && git commit --amend --no-edit"
+alias gac="git add -A && git commit -m "
