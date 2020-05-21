@@ -1,1 +1,1 @@
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/tiang/bin/platform-tools/:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/Users/tiang/bin/platform-tools/:$PATH"

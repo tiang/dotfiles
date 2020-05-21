@@ -13,7 +13,9 @@ alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
+alias dev="cd ~/dev"
 alias g="git"
+alias d="docker"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -149,3 +151,8 @@ alias reload="exec ${SHELL} -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Git alias
+alias p = !git push origin $(git rev-parse --abbrev-ref HEAD)
+alias amend = !git add -A && git commit --amend --no-edit
+alias c = "!git add -A && git commit -m "
